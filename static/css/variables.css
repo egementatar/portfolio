@@ -1,0 +1,7 @@
+:root {
+    --bg-color: #0f172a;       /* Derin Lacivert/Siyah - Güven hissi verir */
+    --text-color: #f1f5f9;
+    --primary-color: #22c55e;  /* Terminal Yeşili - Siber güvenlik vurgusu */
+    --accent-color: #38bdf8;
+    --font-main: 'Inter', sans-serif;
+} 
