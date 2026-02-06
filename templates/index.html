@@ -3,63 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolyo | Siber Güvenlik & Geliştirici</title>
+    <title>Egemen Tatar | Portfolio</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/variables.css') }}">
-<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-    <header>
-         
-        <nav class="container">
-         <div class="logo">EGEMEN TATAR<span class="dot"></span></div>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Communication</a></li>
-            </ul>
-        </nav>
-    </header>
+    <nav class="navbar">
+        <div class="logo">ET.</div>
+        <ul class="nav-links">
+            <li><a href="#home">Ana Sayfa</a></li>
+            <li><a href="#skills">Yetenekler</a></li>
+            <li><a href="#projects">Projeler</a></li>
+            <li><a href="#contact">İletişim</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
 
-    <main>
-        <section id="home" class="hero">
-            <h1>understanding and building the system</h1>
-            <p>A 19-year-old software developer and technology enthusiast born in Adana.</p>
-        </section>
-   <section id="projects" class="container">
-      <h2 class="section-title">Technical Armoryk</h2>
-     <div class="skills-grid">
-         <div class="skill-card">
-             <i class="icon">🐍</i>
-             <h3>Python & C#</h3>
-             <p>Otomasyon araçları ve backend geliştirme.</p>
-         </div>
-         <div class="skill-card">
-             <i class="icon">🐧</i>
-             <h3>Linux & Ricing</h3>
-             <p>Debian/Arch tabanlı sistem yönetimi ve özelleştirme.</p>
-         </div>
-         <div class="skill-card">
-               <i class="icon">🛡️</i>
-             <h3>Siber Güvenlik</h3>
-             <p>OSINT, Ağ tarama ve Yan Kanal Saldırıları (Side-Channel).</p>
-         </div>
-    </div>
-</section>
-        <section id="contact">
-            <h2>Bana Ulaşın</h2>
-            <form id="contact-form">
-                <input type="text" id="name" placeholder="Adınız" required maxlength="50">
-                <input type="email" id="email" placeholder="E-posta Adresiniz" required>
-                <textarea id="message" placeholder="Mesajınız" required maxlength="500"></textarea>
-                <button type="submit">Gönder</button>
-            </form>
-        </section>
-    </main>
+    <section id="home" class="hero-section">
+        <div class="container">
+            <h1 class="glitch-effect" data-text="Egemen Tatar">Egemen Tatar</h1>
+            <h2 class="subtitle">Cyber Security Enthusiast & Backend Developer</h2>
+            <p class="description">
+                Adana'dan dünyaya açılan bir terminal penceresi. <br>
+                Selçuk Üniversitesi Bilgisayar Programcılığı öğrencisi. 
+                Güvenli kod, sağlam mimari ve Linux tutkunu.
+            </p>
+            <div class="buttons">
+                <a href="#contact" class="btn btn-primary">İletişime Geç</a>
+                <a href="#projects" class="btn btn-outline">Projelerim</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section-dark">
+        <h2 class="section-title">Yetenek Envanteri</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <i class="fab fa-python skill-icon"></i>
+                <h3>Python & Flask</h3>
+                <p>Otomasyon araçları, Backend API geliştirme ve görüntü işleme (OpenCV).</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-user-secret skill-icon"></i>
+                <h3>Siber Güvenlik</h3>
+                <p>Kali Linux, Metasploit, Ağ Analizi ve Sistem Sıkılaştırma.</p>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-linux skill-icon"></i>
+                <h3>Linux Sistemleri</h3>
+                <p>Debian/Ubuntu yönetimi, Bash Scripting ve Terminal özelleştirme.</p>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-windows skill-icon"></i>
+                <h3>C# .NET</h3>
+                <p>Masaüstü uygulamaları ve form tabanlı otomasyon sistemleri.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2 class="section-title">Tamamlanan Görevler</h2>
+        <div class="projects-grid">
+            
+            <div class="project-card">
+                <div class="card-content">
+                    <h3>Plaka Tanıma Sistemi</h3>
+                    <span class="tech-tag">Python</span> <span class="tech-tag">OpenCV</span>
+                    <p>Kamera görüntüsü üzerinden araç plakalarını anlık tespit edip metne dönüştüren görüntü işleme projesi.</p>
+                </div>
+            </div>
+    
+            <div class="project-card">
+                <div class="card-content">
+                    <h3>Güvenli İletişim Portfolyosu</h3>
+                    <span class="tech-tag">Flask</span> <span class="tech-tag">Telegram API</span>
+                    <p>Şu an gezdiğiniz site. Backend güvenliği sağlanmış, bot entegrasyonlu modern web mimarisi.</p>
+                </div>
+            </div>
+    
+            <div class="project-card">
+                <div class="card-content">
+                    <h3>Fitness Otomasyonu</h3>
+                    <span class="tech-tag">C#</span> <span class="tech-tag">SQL</span>
+                    <p>Spor salonları için üye takibi, aidat yönetimi ve raporlama sağlayan masaüstü yazılımı.</p>
+                </div>
+            </div>
+    
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2 class="section-title">Bana Ulaşın</h2>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Adınız" required maxlength="50">
+            <input type="email" id="email" placeholder="E-posta Adresiniz" required>
+            <textarea id="message" placeholder="Mesajınız" required maxlength="500"></textarea>
+            <button type="submit">Gönder</button>
+        </form>
+    </section>
 
     <footer>
-        <p>&copy; 2026 - Güvenli Portfolyo Projesi</p>
+        <div class="social-links">
+            <a href="https://github.com/egementatar" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            <a href="#" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <a href="mailto:seninmailin@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+        </div>
+        <p>&copy; 2026 Egemen Tatar. Tüm hakları saklıdır.</p>
     </footer>
 
     <script src="{{ url_for('static', filename='js/main.js') }}"></script>
